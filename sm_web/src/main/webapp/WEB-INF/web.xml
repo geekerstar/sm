@@ -20,7 +20,7 @@
 
   <servlet>
     <servlet-name>Global</servlet-name>
-    <servlet-class>com.geekerstar.sm.global.DIspatcherServlet</servlet-class>
+    <servlet-class>com.geekerstar.sm.global.DispatcherServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Global</servlet-name>
