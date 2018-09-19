@@ -29,30 +29,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="java" value="16" />
+          <entry key="java" value="17" />
           <entry key="jsp" value="8" />
-          <entry key="xml" value="8" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="17" />
           <entry key="JSP" value="8" />
-          <entry key="XML" value="8" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="java" value="1419" />
+          <entry key="java" value="1425" />
           <entry key="jsp" value="117" />
           <entry key="xml" value="1762" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1419" />
+          <entry key="JAVA" value="1425" />
           <entry key="JSP" value="117" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1762" />
@@ -62,24 +62,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/controller/StaffController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-278">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/staff_add.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/staff_list.jsp">
+        <entry file="file://$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/dao/SelfDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -89,8 +80,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -122,6 +113,7 @@
         <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/StaffService.java" />
         <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/impl/StaffServiceImpl.java" />
         <option value="$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/controller/StaffController.java" />
+        <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/dao/SelfDao.java" />
       </list>
     </option>
   </component>
@@ -465,12 +457,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537352442515</updated>
       <workItem from="1537352443862" duration="708000" />
-      <workItem from="1537353157350" duration="12392000" />
+      <workItem from="1537353157350" duration="12658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13100000" />
+    <option name="totallyTimeSpent" value="13366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,13 +559,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/entity/Department.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -787,8 +772,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/staff_add.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/dao/SelfDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
