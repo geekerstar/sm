@@ -6,7 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6140e8d8-c2c2-4db0-aea0-6d4eb6507d84" name="Default Changelist" comment="" />
+    <list default="true" id="6140e8d8-c2c2-4db0-aea0-6d4eb6507d84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/images/login_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sm_service/target/" />
@@ -29,47 +35,82 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="java" value="17" />
-          <entry key="jsp" value="8" />
-          <entry key="xml" value="9" />
+          <entry key="java" value="21" />
+          <entry key="jsp" value="12" />
+          <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JAVA" value="17" />
-          <entry key="JSP" value="8" />
-          <entry key="XML" value="9" />
+          <entry key="JAVA" value="21" />
+          <entry key="JSP" value="12" />
+          <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="java" value="1425" />
+          <entry key="java" value="1453" />
           <entry key="jsp" value="117" />
-          <entry key="xml" value="1762" />
+          <entry key="xml" value="1780" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1425" />
+          <entry key="JAVA" value="1453" />
           <entry key="JSP" value="117" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="1762" />
+          <entry key="XML" value="1780" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/dao/SelfDao.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/left.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="353">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/controller/SelfController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/global/LoginFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-62">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -98,7 +139,6 @@
         <option value="$PROJECT_DIR$/sm_service/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/global/EncodingFilter.java" />
         <option value="$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/global/DIspatcherServlet.java" />
-        <option value="$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/entity/Department.java" />
         <option value="$PROJECT_DIR$/sm_service/src/main/resources/com/geekerstar/sm/dao/DepartmentDao.xml" />
         <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/DepartmentService.java" />
@@ -114,6 +154,13 @@
         <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/impl/StaffServiceImpl.java" />
         <option value="$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/controller/StaffController.java" />
         <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/dao/SelfDao.java" />
+        <option value="$PROJECT_DIR$/sm_service/src/main/resources/com/geekerstar/sm/dao/SelfDao.xml" />
+        <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/SelfService.java" />
+        <option value="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/impl/SelfServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sm_web/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/controller/SelfController.java" />
+        <option value="$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/global/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -353,9 +400,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sm_web/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/global" />
       <recent name="$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/controller" />
-      <recent name="$PROJECT_DIR$/sm_service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/sm_web/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/impl" />
+      <recent name="$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -372,7 +421,7 @@
   </component>
   <component name="RunManager">
     <configuration name="sm" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/sm/department/list.do" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/sm/main.do" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -457,12 +506,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537352442515</updated>
       <workItem from="1537352443862" duration="708000" />
-      <workItem from="1537353157350" duration="12658000" />
+      <workItem from="1537353157350" duration="13584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13366000" />
+    <option name="totallyTimeSpent" value="14292000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,7 +524,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="157" y="46" width="1400" height="907" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
@@ -556,9 +604,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/entity/Department.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -772,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/staff_add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -793,6 +831,70 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_service/src/main/resources/com/geekerstar/sm/dao/SelfDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/SelfService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_service/src/main/java/com/geekerstar/sm/service/impl/SelfServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/left.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/controller/SelfController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_web/src/main/java/com/geekerstar/sm/global/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
