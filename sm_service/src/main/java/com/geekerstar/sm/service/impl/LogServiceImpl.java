@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+
 @Service("logService")
 public class LogServiceImpl implements LogService {
     @Autowired

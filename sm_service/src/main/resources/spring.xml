@@ -14,6 +14,7 @@
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!--spring整合mybatis-->
+    <!--    配置数据源-->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql:///sm?useUnicode=true&amp;characterEncoding=utf-8"/>
@@ -21,11 +22,13 @@
         <property name="password" value="210819"/>
     </bean>
 
+    <!--    Mybatis配置-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="typeAliasesPackage" value="com.geekerstar.sm.entity"/>
     </bean>
 
+    <!--    自动映射-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.geekerstar.sm.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>

@@ -15,9 +15,9 @@ public class SelfServiceImpl implements SelfService {
     private StaffDao staffDao;
 
     public Staff login(String account, String password) {
-        Staff staff =selfDao.selectByAccount(account);
-        if(staff==null)return null;
-        if(staff.getPassword().equals(password))return staff;
+        Staff staff = selfDao.selectByAccount(account);
+        if (staff == null) return null;
+        if (staff.getPassword().equals(password)) return staff;
         return null;
     }
 

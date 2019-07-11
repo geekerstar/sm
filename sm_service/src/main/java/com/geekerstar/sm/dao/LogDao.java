@@ -8,5 +8,6 @@ import java.util.List;
 @Repository("logDao")
 public interface LogDao {
     void insert(Log log);
+
     List<Log> selectByType(String type);
 }

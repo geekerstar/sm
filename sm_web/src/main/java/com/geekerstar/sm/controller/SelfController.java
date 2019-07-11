@@ -18,50 +18,56 @@ public class SelfController {
 
     //      /toLogin.do
     public void toLogin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("login.jsp").forward(request,response);
+        request.getRequestDispatcher("login.jsp").forward(request, response);
     }
+
     //      /login.do
     public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String account =request.getParameter("account");
+        String account = request.getParameter("account");
         String password = request.getParameter("password");
 
-        Staff staff = selfService.login(account,password);
-        if(staff==null){
+        Staff staff = selfService.login(account, password);
+        if (staff == null) {
             response.sendRedirect("toLogin.do");
-        }else{
+        } else {
             HttpSession session = request.getSession();
-            session.setAttribute("USER",staff);
+            session.setAttribute("USER", staff);
             response.sendRedirect("main.do");
         }
     }
+
     //      /logout.do
     public void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         session.setAttribute("USER", null);
         response.sendRedirect("toLogin.do");
     }
+
     //      /main.do
     public void main(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("index.jsp").forward(request,response);
+        request.getRequestDispatcher("index.jsp").forward(request, response);
     }
+
     //      /self/info.do
     public void info(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("../info.jsp").forward(request,response);
+        request.getRequestDispatcher("../info.jsp").forward(request, response);
     }
+
     //      /self/toChangePassword.do
     public void toChangePassword(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("../change_password.jsp").forward(request,response);
+        request.getRequestDispatcher("../change_password.jsp").forward(request, response);
     }
+
     //      /self/changePassword.do
     public void changePassword(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String password = request.getParameter("password");
         String password1 = request.getParameter("password1");
         HttpSession session = request.getSession();
-        Staff staff = (Staff)session.getAttribute("USER");
-        if(!staff.getPassword().equals(password)){
+        Staff staff = (Staff) session.getAttribute("USER");
+        if (!staff.getPassword().equals(password)) {
             response.sendRedirect("toChangePassword.do");
-        }else{
-            selfService.changePassword(staff.getId(),password1);
+        } else {
+            selfService.changePassword(staff.getId(), password1);
             //response.sendRedirect("../logout.do");
             response.getWriter().print("<script type=\"text/javascript\">parent.location.href=\"../logout.do\"</script>");
         }

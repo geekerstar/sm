@@ -18,16 +18,37 @@ public class DepartmentController {
     @Autowired
     private DepartmentService departmentService;
 
+    /**
+     * 查询部门列表
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void list(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Department> list = departmentService.getAll();
-        request.setAttribute("LIST",list);
-        request.getRequestDispatcher("../department_list.jsp").forward(request,response);
+        request.setAttribute("LIST", list);
+        request.getRequestDispatcher("../department_list.jsp").forward(request, response);
     }
 
+    /**
+     * 添加部门（查）
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void toAdd(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("../department_add.jsp").forward(request,response);
+        request.getRequestDispatcher("../department_add.jsp").forward(request, response);
     }
 
+    /**
+     * 添加部门
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void add(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         String address = request.getParameter("address");
@@ -40,13 +61,27 @@ public class DepartmentController {
         response.sendRedirect("list.do");
     }
 
+    /**
+     * 修改部门（查）
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void toEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.parseInt(request.getParameter("id"));
         Department department = departmentService.get(id);
-        request.setAttribute("OBJ",department);
-        request.getRequestDispatcher("../department_edit.jsp").forward(request,response);
+        request.setAttribute("OBJ", department);
+        request.getRequestDispatcher("../department_edit.jsp").forward(request, response);
     }
 
+    /**
+     * 修改部门
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void edit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
@@ -61,6 +96,13 @@ public class DepartmentController {
         response.sendRedirect("list.do");
     }
 
+    /**
+     * 删除部门
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void remove(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.parseInt(request.getParameter("id"));
         departmentService.remove(id);

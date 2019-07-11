@@ -21,27 +21,28 @@ public class DispatcherServlet extends GenericServlet {
         super.init();
         context = new ClassPathXmlApplicationContext("spring.xml");
     }
+
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        HttpServletRequest request =(HttpServletRequest)servletRequest;
-        HttpServletResponse response = (HttpServletResponse)servletResponse;
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
 
         String path = request.getServletPath().substring(1);
-        String beanName= null;
-        String methodName =null;
+        String beanName = null;
+        String methodName = null;
         int index = path.indexOf('/');
-        if (index!=-1){
-            beanName=path.substring(0,index)+"Controller";
-            methodName = path.substring(index+1,path.indexOf(".do"));
-        }else{
-            beanName="selfController";
-            methodName = path.substring(0,path.indexOf(".do"));
+        if (index != -1) {
+            beanName = path.substring(0, index) + "Controller";
+            methodName = path.substring(index + 1, path.indexOf(".do"));
+        } else {
+            beanName = "selfController";
+            methodName = path.substring(0, path.indexOf(".do"));
         }
         Object obj = context.getBean(beanName);
         try {
-            Method method = obj.getClass().getMethod(methodName,HttpServletRequest.class,HttpServletResponse.class);
+            Method method = obj.getClass().getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
             try {
-                method.invoke(obj,request,response);
+                method.invoke(obj, request, response);
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             } catch (InvocationTargetException e) {

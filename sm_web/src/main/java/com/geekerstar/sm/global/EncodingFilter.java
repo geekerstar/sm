@@ -9,7 +9,7 @@ public class EncodingFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        if (filterConfig.getInitParameter("ENCODING")!=null)
+        if (filterConfig.getInitParameter("ENCODING") != null)
             encoding = filterConfig.getInitParameter("ENCODING");
     }
 
@@ -17,11 +17,11 @@ public class EncodingFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         servletRequest.setCharacterEncoding(encoding);
         servletResponse.setCharacterEncoding(encoding);
-        filterChain.doFilter(servletRequest,servletResponse);
+        filterChain.doFilter(servletRequest, servletResponse);
     }
 
     @Override
     public void destroy() {
-        encoding=null;
+        encoding = null;
     }
 }
