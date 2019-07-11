@@ -16,12 +16,24 @@ public class SelfController {
     @Autowired
     private SelfService selfService;
 
-    //      /toLogin.do
+    /**
+     * 进入登录页面
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void toLogin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("login.jsp").forward(request, response);
     }
 
-    //      /login.do
+    /**
+     * 登录
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String account = request.getParameter("account");
         String password = request.getParameter("password");
@@ -36,29 +48,59 @@ public class SelfController {
         }
     }
 
-    //      /logout.do
+    /**
+     * 退出
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         session.setAttribute("USER", null);
         response.sendRedirect("toLogin.do");
     }
 
-    //      /main.do
+    /**
+     * 主界面
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void main(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 
-    //      /self/info.do
+    /**
+     * /self/info.do 查看个人信息
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void info(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("../info.jsp").forward(request, response);
     }
 
-    //      /self/toChangePassword.do
+    /**
+     * 打开修改密码界面 /self/toChangePassword.do
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void toChangePassword(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("../change_password.jsp").forward(request, response);
     }
 
-    //      /self/changePassword.do
+    /**
+     * 修改密码 /self/changePassword.do
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void changePassword(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String password = request.getParameter("password");
         String password1 = request.getParameter("password1");

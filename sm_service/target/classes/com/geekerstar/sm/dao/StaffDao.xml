@@ -14,7 +14,8 @@
         <result property="leaveTime" column="leave_time" javaType="java.util.Date"/>
         <result property="bornDate" column="born_date" javaType="java.util.Date"/>
         <result property="info" column="info" javaType="String"/>
-        <association property="department" column="did" javaType="Department" select="com.geekerstar.sm.dao.DepartmentDao.selectById" />
+        <association property="department" column="did" javaType="Department"
+                     select="com.geekerstar.sm.dao.DepartmentDao.selectById"/>
     </resultMap>
 
     <insert id="insert" parameterType="Staff" useGeneratedKeys="true">

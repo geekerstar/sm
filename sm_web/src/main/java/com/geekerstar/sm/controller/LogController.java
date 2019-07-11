@@ -27,7 +27,7 @@ public class LogController {
     public void loginLog(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Log> list = logService.getLoginLog();
         request.setAttribute("LIST", list);
-        request.setAttribute("TYPE", "登陆");
+        request.setAttribute("TYPE", "登录");
         request.getRequestDispatcher("../log_list.jsp").forward(request, response);
     }
 

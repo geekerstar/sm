@@ -9,22 +9,24 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>部门列表</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="../css/common.css"/>
     <link rel="stylesheet" type="text/css" href="../css/thems.css">
     <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript">
-        $(function(){
+        $(function () {
             //自适应屏幕宽度
-            window.onresize=function(){ location=location };
+            window.onresize = function () {
+                location = location
+            };
 
             var main_h = $(window).height();
-            $('.hy_list').css('height',main_h-45+'px');
+            $('.hy_list').css('height', main_h - 45 + 'px');
 
-            var search_w = $(window).width()-40;
-            $('.search').css('width',search_w+'px');
+            var search_w = $(window).width() - 40;
+            $('.search').css('width', search_w + 'px');
             //$('.list_hy').css('width',search_w+'px');
         });
     </script>

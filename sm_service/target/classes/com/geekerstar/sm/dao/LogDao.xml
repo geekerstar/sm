@@ -8,7 +8,7 @@
         <result property="moudle" column="moudle" javaType="String"/>
         <result property="operation" column="operation" javaType="String"/>
         <result property="result" column="result" javaType="String"/>
-     </resultMap>
+    </resultMap>
 
     <insert id="insert" parameterType="Log">
         insert into log values(#{oprTime},#{type},#{operator},#{moudle},#{operation},#{result});

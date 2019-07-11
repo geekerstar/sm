@@ -17,6 +17,7 @@ public class LoginFilter implements Filter {
         String path = request.getServletPath();
 
         if (path.toLowerCase().indexOf("login") != -1) {
+            //放行
             filterChain.doFilter(request, response);
         } else {
             HttpSession session = request.getSession();

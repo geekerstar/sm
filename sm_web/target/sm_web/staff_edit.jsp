@@ -3,23 +3,25 @@
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=8" >
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
     <title>编辑员工</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="../css/common.css"/>
     <link rel="stylesheet" type="text/css" href="../css/thems.css">
     <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript">
-        $(function(){
+        $(function () {
             //自适应屏幕宽度
-            window.onresize=function(){ location=location };
+            window.onresize = function () {
+                location = location
+            };
 
             var main_h = $(window).height();
-            $('.hy_list').css('height',main_h-45+'px');
+            $('.hy_list').css('height', main_h - 45 + 'px');
 
             var main_w = $(window).width();
-            $('.xjhy').css('width',main_w-40+'px');
+            $('.xjhy').css('width', main_w - 40 + 'px');
 
         });
     </script>
@@ -51,7 +53,7 @@
                                 <select name="did">
                                     <c:forEach items="${DLIST}" var="dep">
                                         <c:if test="${OBJ.did==dep.id}">
-                                        <option value="${dep.id}" selected="selected">${dep.name}</option>
+                                            <option value="${dep.id}" selected="selected">${dep.name}</option>
                                         </c:if>
                                         <c:if test="${OBJ.did!=dep.id}">
                                             <option value="${dep.id}">${dep.name}</option>
@@ -97,7 +99,8 @@
                         <li class="clearfix">
                             <span class="title">出生日期：</span>
                             <div class="li_r">
-                                <input class="chang" name="bornDate" type="text" value="<fmt:formatDate value="${OBJ.bornDate}" pattern="yyyy-MM-dd"/>"/>
+                                <input class="chang" name="bornDate" type="text"
+                                       value="<fmt:formatDate value="${OBJ.bornDate}" pattern="yyyy-MM-dd"/>"/>
                             </div>
                         </li>
                         <li class="clearfix">
